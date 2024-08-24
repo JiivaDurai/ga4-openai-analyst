@@ -5,12 +5,10 @@ import ast
 import streamlit as st
 from openai import  AssistantEventHandler
 from typing_extensions import override
-from dotenv import load_dotenv
 from openai.types.beta.threads import Text, TextDelta
 from bigquery_functions import execute_sql_query, get_table_schema
 
 # Load environment variables from .env file
-load_dotenv()
 
 # Load the OpenAI API key from the environment variable
 # set from the .env file
